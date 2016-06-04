@@ -1,0 +1,299 @@
+@import (less) "shop-config.less";
+
+a {
+ text-decoration: none;
+}
+
+>.left{
+ width: 250px;
+ display: inline-block;
+ vertical-align: top;
+ padding-top: 60px;
+}
+
+>.right{
+ width: 905px;
+ display: inline-block;
+ vertical-align: top;
+ font-family: HelveticaNeueCyr-Roman;
+ font-size: 13px;
+ line-height: 1.5em;
+
+ a.goback{
+  text-decoration: none;
+  color: #2c2b2b;
+  margin: 20px 0;
+  display: inline-block;
+  font-size: 16px;
+ }
+
+ .imglist{
+  width: 440px;
+  height: 485px;
+  float: left;
+  margin: 0 15px 0 0;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+
+  img{
+   width: 350px;
+   height: 350px;
+  }
+
+  .slider{
+   position: absolute;
+   height: 110px;
+   width: 100%;
+   bottom: 0;
+   text-align: center;
+
+   .item{
+    height: 110px;
+    width: 110px;
+    display: inline-block;
+    margin: 0 10px;
+    overflow: hidden;
+   }
+  }
+ }
+
+ h1{
+  font-size: 24px;
+  font-weight: normal;
+ }
+
+ h2{
+  font-size: 20px;
+  font-weight: normal;
+  color: #363434;
+  margin: 5px 0 20px 0;
+ }
+
+ .price{
+  color: #e8475a;
+  display: inline-block;
+  font-size: 24px;
+ }
+
+ .oldprice{
+  text-decoration: line-through;
+  font-size: 24px;
+  display: inline-block;
+  color: #2c2b2b;
+ }
+
+ .discount{
+  color: #363434;
+  font-size: 11px;
+  margin-bottom: 10px;
+ }
+
+ button{
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: 2px solid #e8475a;
+  background: #e8475a;
+  display: block;
+  margin: 10px 0 10px auto;
+ }
+
+ button:nth-of-type(2){
+  font-size: 11px;
+  padding: 4px 10px;
+  margin: 10px 30px 40px auto;
+  border: 2px solid #363434;
+  background: #363434;
+ }
+
+ .sizebox{
+  font-size: 16px;
+  margin: 30px 0 0;
+  
+  a {
+   color: #e8475a;
+  }
+
+  .size {
+   border: 1px solid #363434;
+   box-shadow: 0 0 1px black;
+   font-size: 14px;
+   display: inline-block;
+   padding: 8px 8px 4px 8px;
+   margin: 8px 3px;
+   cursor: pointer;
+  }
+
+  .sel {
+   border: 2px solid #e8475a;
+   box-shadow: 0 0 1px #e8475a;
+   padding: 7px 7px 4px 8px;
+  }
+ }
+ .colorbox {
+  font-size: 16px;
+  margin: 15px 0;
+  
+  .color {
+   border: 1px solid #c0c0c0;
+   box-shadow: 0 0 1px black;
+   font-size: 14px;
+   display: inline-block;
+   margin: 8px 3px;
+   height: 35px;
+   width: 35px;
+   cursor: pointer;
+  }
+
+  .white {
+   background: white;
+  }
+
+  .gray {
+   border: 1px solid #696969;
+   background: #696969;
+  }
+
+  .sel {
+   border: 2px solid #e8475a;
+   box-shadow: 0 0 1px #e8475a;
+   height: 34px;
+   width: 34px;
+  }
+ }
+}
+
+.title{
+ font-family: HelveticaNeueCyr-Roman;
+ color: #2c2b2b;
+ font-size: 18px;
+ padding: 3px 10px;
+ border-bottom: 1px solid #c0c0c0;
+ margin: 50px 0 15px;
+}
+
+p{
+ font-family: HelveticaNeueCyr-Roman;
+ color: #363434;
+ font-size: 12px;
+}
+
+img.banner{
+ width: 95%;
+ display: inline-block;
+ margin: 0 2.5% 70px;
+}
+
+.similarprint{
+
+ > .tabs{
+  border-bottom: 1px solid #c0c0c0;
+  height: 39px;
+
+  > .item{
+   height: 20px;
+   padding: 10px 15px;
+   display: inline-block;
+   cursor: pointer;
+
+   &.sel{
+    border: 1px solid #c0c0c0;
+    border-bottom: 0;
+    background: white;
+    height: 19px;
+    color: #e8475a;
+   }
+  }
+ }
+
+ > .pages{
+  border: 1px solid #c0c0c0;
+  border-top: 0;
+
+  > .item{
+   display: none;
+   height: 190px;
+   position: relative;
+
+   > .slider{
+    padding: 15px 0;
+    margin: 0 30px;
+    overflow: hidden;
+
+    .swiper-wrapper{
+
+     .swiper-slide{
+      text-align: center;
+      font-size: 12px;
+      font-family: HelveticaNeueCyr-Roman;
+
+      img{
+       max-width: 125px;
+       max-height: 125px;
+       min-width: 75px;
+       min-height: 75px;
+      }
+     }
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+     background-image: url(/images/arrow.png);
+     left: 5px;
+    }
+    .swiper-button-next{
+     transform: rotate(180deg);
+     left: auto;
+     right: 5px;
+    }
+   }
+
+   &.sel{
+    display: block;
+   }
+  }
+ }
+}
+
+.similargoods{
+
+ > .item{
+  width: 236px;
+  height: 340px;
+  border: 1px solid #cbcbcb;
+  text-align: center;
+  padding: 30px 20px 20px;
+  position: relative;
+  font-size: 12px;
+  font-family: HelveticaNeueCyr-Roman;
+  margin: 20px 5px;
+  display: inline-block;
+
+  img{
+   min-height: 200px;
+   min-width: 200px;
+   max-height: 240px;
+   max-width: 240px;
+  }
+
+  .head{
+   text-align: left;
+   font-size: 20px;
+   margin-top: 5px;
+  }
+
+  .text{
+   text-align: left;
+   font-size: 13px;
+   color: #959595;
+  }
+
+  .price{
+   text-align: left;
+   position: absolute;
+   bottom: 20px;
+   font-size: 20px;
+  }
+ }
+}

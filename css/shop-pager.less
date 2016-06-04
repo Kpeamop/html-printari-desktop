@@ -1,0 +1,35 @@
+@import (less) "shop-config.less";
+
+.pager{
+ color: @color-lightgray;
+ font-family: HelveticaNeueCyr-Roman;
+ font-size: 14px;
+ margin: 15px 25px 15px 5px;
+
+ .page{
+  display: inline-block;
+  padding: 6px 5px 2px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &.sel{
+   color: white;
+   background: @color-pink;
+  }
+ }
+
+ .count{
+  float: right;
+  margin-top: 5px;
+
+  .item{
+   display: inline-block;
+   margin: 0 2px;
+   cursor: pointer;
+
+   &.sel{
+    color: @color-pink;
+   }
+  }
+ }
+}

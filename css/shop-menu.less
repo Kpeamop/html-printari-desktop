@@ -1,0 +1,80 @@
+@import (less) "shop-config.less";
+
+.wrap-menu{
+ background: @color-gray;
+ height: 40px;
+ border-top: 1px solid #525151;
+ text-align: center;
+ min-width: 1180px;
+
+ .root{
+  color: white;
+
+  font-family: HelveticaNeueCyr-Roman;
+  font-size: 18px;
+
+  margin: 0 10px;
+  padding: 10px 10px 0 10px;
+  height: 33px;
+
+  border-radius: 3px;
+
+  display: inline-block;
+  position: relative;
+
+  &:hover{
+   background: white;
+   color: @color-pink;
+   text-decoration: underline;
+
+   .sub{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s;
+   }
+  }
+
+  .sub{
+   background: white;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   margin-top: 43px;
+   border-radius: 0 3px 1px 1px;
+
+   -webkit-box-shadow: 1px 4px 5px gray;
+   -moz-box-shadow: 1px 4px 5px gray;
+   box-shadow: 1px 4px 5px gray;
+
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s linear 0.3s,opacity 0.3s;
+
+   white-space: nowrap;
+
+   .column{
+    margin: 28px 22px;
+    display: inline-block;
+    text-align: left;
+
+    .head{
+     color: @color-pink;
+     margin-bottom: 22px;
+    }
+
+    a{
+     color: @color-gray;
+     display: block;
+     margin: 10px 0;
+     font-size: 15px;
+     text-decoration: none;
+
+     &:hover{
+      text-decoration: underline;
+     }
+    }
+   }
+  }
+ }
+}

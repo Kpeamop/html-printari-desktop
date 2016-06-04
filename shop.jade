@@ -1,0 +1,23 @@
+doctype html
+html
+ head
+  title магаз
+  link(href="/css/shop.css" rel="stylesheet" type="text/css")
+ body
+  .content-bg
+  .content-head
+   include shop-head.jade
+  .content-menu
+   include shop-menu.jade
+  .content-breadcrumb
+   a(href="") ГЛАВНАЯ
+   |-
+   a(href="") МАГАЗИН ГОТОВОЙ ПРОДУКЦИИ
+   |-
+   a(href="") ТОЛСТОВКИ С КАПЮШОНОМ
+   |-
+   |CHAKKY
+  .content-body.catalog
+   include shop-catalog.jade
+  .content-foot
+   include shop-foot.jade

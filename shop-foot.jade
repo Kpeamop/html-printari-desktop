@@ -1,0 +1,35 @@
+.column
+ .head НАШИ КОНТАКТЫ
+ span.
+  г. Москва, ул. Барклая д.8<br>
+  ТЦ "Горбушка";<br>
+  Работаем каждый день с 10:00 до 21:00<br>
+  тел.: +7 (495) 744-33-27<br>
+  e-mail: <a href="mailto:mail@printari.ru">mail@printari.ru</a>
+
+.column
+ .head ОСТАВИТЬ ЗАЯВКУ
+ form.register_form(role="form" novalidate="novalidate")
+  input.txt(placeholder="ВАШЕ ИМЯ" name="name" type="text")
+  input.txt(placeholder="EMAIL АДРЕС" name="email" type="email")
+  input.txt(placeholder="ВАШ ТЕЛЕФОН" name="phone" type="text")
+  input.txt(placeholder="ВАШ ВОПРОС ИЛИ СООБЩЕНИЕ" name="question" type="text")
+
+  div.btn(onclick="$(this).parent().submit()") OK
+
+.column
+ .head ПОДПИСЫВАЙТЕСЬ
+ ul.soc_nav
+  li
+   noindex
+    a(href="https://twitter.com/EMstoreRU" rel="nofollow")
+     img(src="/images/tw.png")
+  li
+   noindex
+    a(href="https://instagram.com/emstoreru" rel="nofollow")
+     img(src="/images/in.png")
+  li
+   noindex
+    a(href="https://vk.com/emstore" rel="nofollow")
+     img(src="/images/vk.png")
+ | Printari © 2014 • Designed &amp; Creative

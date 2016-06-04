@@ -1,0 +1,72 @@
+@import (less) "shop-config.less";
+
+.content-block(){
+ width: @page-width;
+ margin: 0 auto;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+}
+
+.content-bg{
+ background: @color-gray;
+ height: 154px;
+ width: 100%;
+ min-width: 1180px;
+ position: absolute;
+ z-index: -1;
+}
+
+.content-head{
+ .content-block();
+ height: 154px;
+
+ @import (less) "shop-head.less";
+}
+
+.content-menu{
+ @import (less) "shop-menu.less";
+}
+
+.content-breadcrumb{
+ .content-block();
+
+ font-family: HelveticaNeueCyr-Roman;
+ font-size: 13px;
+ color: black;
+ margin: 10px auto;
+
+ a{
+  color: @color-gray;
+  text-decoration: none;
+  margin: 0 5px;
+
+  &:hover{
+   text-decoration: underline;
+  }
+ }
+}
+
+.content-body{
+ .content-block();
+
+ @import (less) "shop-pager.less";
+
+ .cart{
+  @import (less) "shop-cart.less";
+ }
+ &.catalog{
+  @import (less) "shop-catalog.less";
+ }
+ &.item{
+  @import (less) "shop-item.less";
+ }
+}
+
+.content-foot{
+ .content-block();
+
+ @import (less) "shop-foot.less";
+}
